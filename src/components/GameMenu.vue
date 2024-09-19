@@ -23,6 +23,7 @@ const scale = useElementHoverScale(containerRef)
     :x="320" :y="180"
     :scale="1.35"
     @click="emit('start')"
+    @touchstart="emit('start')"
   >
     <tiling-sprite
       :y="offsetY"
