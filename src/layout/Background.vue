@@ -29,7 +29,7 @@ const blurValue = useTransition(
     :texture="texture"
     :texture-options="{ scaleMode: SCALE_MODES.NEAREST }"
   >
-    <blur-filter :strength="10" :blur="blurValue" />
+    <!-- <blur-filter :strength="10" :blur="blurValue" /> -->
   </tiling-sprite>
 </template>
 
