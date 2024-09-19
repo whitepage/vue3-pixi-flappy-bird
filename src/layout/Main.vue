@@ -7,12 +7,12 @@ const screen = useScreen()
 
 const scale = computed(() => {
   const { width, height } = screen.value
-  return Math.min(width / 640, height / 480)
+  return Math.min(width / 320, height / 480)
 })
 const position = computed(() => {
   const { width, height } = screen.value
   return {
-    x: (width - 640 * scale.value) / 2,
+    x: (width - 320 * scale.value) / 2,
     y: (height - 480 * scale.value) / 2,
   }
 })
@@ -20,7 +20,7 @@ const position = computed(() => {
 const mask = ref<Graphics>()
 
 function drawMask(mask: Graphics) {
-  mask.beginFill(0xFFFFFF).drawRect(0, 0, 640, 480).endFill()
+  mask.beginFill(0xFFFFFF).drawRect(0, 0, 320, 480).endFill()
 }
 </script>
 

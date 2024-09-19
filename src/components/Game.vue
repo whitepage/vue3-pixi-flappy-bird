@@ -20,7 +20,7 @@ const distance = 300
 
 const groundX = useTilePosition()
 const pipes = ref<{ x: number; y: number }[]>([])
-const birdX = ref(200)
+const birdX = ref(100)
 const birdY = ref(150)
 const gameover = ref(false)
 

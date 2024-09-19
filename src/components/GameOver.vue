@@ -23,7 +23,7 @@ const scale = useElementHoverScale(containerRef)
     <container
       ref="containerRef"
       event-mode="static"
-      :x="320" :y="180"
+      :x="160" :y="90"
       :scale="1.35"
       @click="emit('restart')"
       @touchstart="emit('restart')"
@@ -35,7 +35,7 @@ const scale = useElementHoverScale(containerRef)
         :scale="scale"
       />
     </container>
-    <Score :x="320" :y="(480 / 2) + 30" :score="s" :scale="1.5" />
+    <Score :x="160" :y="(350 / 2) + 30" :score="s" :scale="1.5" />
   </container>
 </template>
 
