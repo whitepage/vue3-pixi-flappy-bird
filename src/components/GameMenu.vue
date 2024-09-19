@@ -20,7 +20,7 @@ const scale = useElementHoverScale(containerRef)
 <template>
   <container
     ref="containerRef"
-    :x="150" :y="90"
+    :x="160" :y="90"
     :scale="1.35"
     @click="emit('start')"
     @touchstart="emit('start')"
