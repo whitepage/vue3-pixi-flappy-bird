@@ -60,6 +60,7 @@ function jump() {
 onKeyDown(' ', jump)
 // listen for click event to jump
 useEventListener('click', jump)
+useEventListener('touchstart', jump)
 
 // when hitting the ground, player dies
 whenever(

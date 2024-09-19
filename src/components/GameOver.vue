@@ -26,6 +26,7 @@ const scale = useElementHoverScale(containerRef)
       :x="320" :y="180"
       :scale="1.35"
       @click="emit('restart')"
+      @touchstart="emit('restart')"
     >
       <sprite
         :y="offsetY"
